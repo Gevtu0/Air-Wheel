@@ -11,8 +11,8 @@ import mediapipe.python.solutions.hands as mp_hands
 #
 #  POSIÇÃO DE DIRIGIR:
 #   - Mãos FECHADAS (punho) = posição neutra de direção
-#   - Polegar para CIMA  (mão dir, punho) → Subir marcha  [B]
-#   - Polegar para BAIXO (mão dir, punho) → Descer marcha [X]
+#   - Polegar para CIMA  (mão esq, punho) → Subir marcha  [B]
+#   - Polegar para BAIXO (mão esq, punho) → Descer marcha [X]
 #   - Sequência de marchas: R → 1 → 2 → 3 → 4 → 5 → 6
 #
 #  ACELERAR / FREAR:
@@ -123,8 +123,8 @@ camera.set(cv2.CAP_PROP_FPS, TARGET_FPS)
 
 print("[INFO] Racing Controller v4.2 iniciado!")
 print("  Punhos fechados                    → posição de dirigir")
-print("  Polegar DIR p/ cima (punho)        → Subir marcha  [B]")
-print("  Polegar DIR p/ baixo (punho)       → Descer marcha [X]")
+print("  Polegar ESQ p/ cima (punho)        → Subir marcha  [B]")
+print("  Polegar ESQ p/ baixo (punho)       → Descer marcha [X]")
 print("  Marchas: R → 1 → 2 → 3 → 4 → 5 → 6")
 print("  'x'=sair | 'c'=EMA | 'm'=calibrar | 'r'=reset marcha | +/-=ajuste")
 print("-" * 60)

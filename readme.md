@@ -9,7 +9,7 @@ O projeto usa Python, OpenCV, MediaPipe Hands e vgamepad para transformar movime
 - Controle analogico de direcao pela diferenca de altura entre as duas maos.
 - Aceleracao no RT quando as duas maos ficam acima da linha verde.
 - Freio no LT quando as duas maos ficam abaixo da linha vermelha.
-- Troca de marcha pela mao direita:
+- Troca de marcha pelo polegar da mao esquerda:
   - polegar para cima: sobe marcha, botao B;
   - polegar para baixo: desce marcha, botao X.
 - Sequencia de marchas de R ate 6.
@@ -27,8 +27,8 @@ O projeto usa Python, OpenCV, MediaPipe Hands e vgamepad para transformar movime
 | Virar | Altere a altura entre a mao esquerda e a mao direita |
 | Acelerar | Coloque as duas maos acima da linha verde |
 | Frear | Coloque as duas maos abaixo da linha vermelha |
-| Subir marcha | Com a mao direita em punho, levante o polegar |
-| Descer marcha | Com a mao direita em punho, abaixe o polegar |
+| Subir marcha | Com a mao esquerda em punho, levante o polegar |
+| Descer marcha | Com a mao esquerda em punho, abaixe o polegar |
 
 ## Teclas do programa
 
@@ -135,6 +135,7 @@ EMA_ALPHA_GATILHO = 0.32
 - O controle virtual aparece para o jogo como um controle de Xbox 360.
 - O comportamento pode variar dependendo do jogo e das configuracoes de controle.
 - O script usa recursos especificos do Windows, como `pywin32`, `vgamepad` e DirectShow.
+- A imagem da camera e espelhada; por isso, a mao esquerda real pode parecer a direita na tela.
 
 ## Estrutura
 
